@@ -39,11 +39,9 @@ const cmp=(a,b)=>{
     if(x.l===a && x.r===b) return -1
     if(x.l===b && x.r===a) return 1}
   return 0}
-//baddies.sort(cmp)
 sum=0
 for(let b of baddies){
   b.sort(cmp)
-  P('b='+b+' mid='+mid(b))
   sum+=mid(b)}
 
 P('The part 2 answer is '+sum+'.')
